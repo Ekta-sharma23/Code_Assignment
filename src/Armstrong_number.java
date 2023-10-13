@@ -5,7 +5,7 @@ public class Armstrong_number {
 		
 	int sum=0,r,n;
 	
-	System.out.println("Amstring number from 1-1000");
+	System.out.println("Armstrong  number from 1-1000");
 	
 	for(int i=1; i<=1000; i++)
 	{
