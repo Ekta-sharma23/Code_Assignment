@@ -4,15 +4,21 @@ package selenium;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.edge.EdgeDriver;
 public class WebDriver_prac {
 	
 public static void main(String[] args) {
 		
+	
+	//Google Chrome
 		System.setProperty("webdriver.chrome.driver", 
 				"C:\\Users\\ektar\\eclipse-workspace\\Practice\\src\\Chrome\\chromedriver.exe");
-		
 		WebDriver driver = new ChromeDriver();
+		
+	//Microsoft Edge
+		System.setProperty("webdriver.edge.driver", 
+				"C:\\Users\\ektar\\git\\Code_Assignment\\edgedriver\\msedgedriver.exe");
+		WebDriver driver1 = new EdgeDriver();
 		
 		//Launch the URL
 		driver.get("https://www.google.com/");
